@@ -1,0 +1,639 @@
+W1_01 RepetitionsAufgabe | 16.08.2023 [
+
+package bin;
+
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class W1_A1 {
+public static void main(String[] args) {
+Scanner sc = new Scanner(System.in);
+int total = 0;
+int input;
+String action = "";
+
+System.out.println("Welcome to the account application");
+while (true) {
+input = 0;
+System.out.println("Please enter the amount, 0 (zero) to terminate, or = to check balance");
+try {
+input = sc.nextInt();
+if (input == 0) {
+break;
+}
+System.out.println("To deposit, press +, to withdraw, press -");
+action = sc.next();
+switch (action) {
+case "+":
+total = total + input;
+break;
+case "-":
+total = total - input;
+break;
+case "=":
+System.out.println("Current balance: " + total);
+break;
+}
+} catch (InputMismatchException e) {
+action = sc.next();
+if (action.equals("=")) {
+System.out.println("Current Balance: " + total);
+} else {
+System.out.println("Error: input must be Integer value or '='.");
+}
+}
+}
+System.out.println("Final balance: " + total);
+sc.close();
+}
+}
+
+]
+
+W1_03 Refactoring AccountApplication | 16.08.2023 [
+
+Account.java
+
+
+package object;
+
+public class Account {
+	private double balance;
+
+	public void deposit(double amount) {
+		balance += amount;
+	}
+
+	public void withdraw(double amount) {
+		balance -= amount;
+	}
+
+	public double getBalance() {
+		return balance;
+	}
+}
+
+
+
+Refactoring_AccountApplication.java
+
+package bin;
+
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+import object.Account;
+
+public class Refactoring_AccountApplication {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int input;
+		String action = "";
+		Account total = new Account();
+
+		System.out.println("Welcome to the account application");
+		while (true) {
+			input = 0;
+			System.out.println("Please enter the amount, 0 (zero) to terminate, or = to check balance");
+			try {
+				input = sc.nextInt();
+				if (input == 0) {
+					break;
+				}
+				System.out.println("To deposit, press +, to withdraw, press -");
+				action = sc.next();
+				switch (action) {
+				case "+":
+					total.deposit(input);;
+					break;
+				case "-":
+					total.withdraw(input);;
+					break;
+				case "=":
+					System.out.println("Current balance: " + total.getBalance());
+					break;
+				}
+			} catch (InputMismatchException e) {
+				action = sc.next();
+				if (action.equals("=")) {
+					System.out.println("Current Balance: " + total.getBalance());
+				} else {
+					System.out.println("Error: input must be Integer value or '='.");
+				}
+			}
+		}
+		System.out.println("Final balance: " + total.getBalance());
+		sc.close();
+	}
+}
+
+]
+
+
+W02_2 Konstruktor implementieren | 23.08.2023 [
+
+Acount.java
+
+package object;
+
+public class Account {
+private double balance;
+
+public void deposit(double amount) {
+balance += amount;
+}
+
+public void withdraw(double amount) {
+balance -= amount;
+}
+
+public double getBalance() {
+return balance;
+}
+
+public Account(double balance) {
+this.balance = balance;
+}
+}
+
+Refactoring_AccountApplication.java
+
+Account total = new Account(0);
+
+
+]
+
+W2_02 Regatta | 23.08.2023 [
+
+boatStart.java
+
+package bin;
+
+import object.Competition;
+import object.Ship;
+
+public class boatStart {
+
+	public static void main(String[] args) {
+		Competition c = new Competition("Rotsee Regatta");
+		Ship ship1 = new Ship(1, "Alinghi");
+		Ship ship2 = new Ship(2, "Red Baron");
+		Ship ship3 = new Ship(3, "Blue Lagoon");
+		c.addShip(ship1); // add ships to competition
+		c.addShip(ship2);
+		c.addShip(ship3);
+		c.start(); // start competition
+		c.printResult(); // print ships with time
+	}
+
+}
+
+
+Ship.java
+
+package object;
+
+public class Ship {
+	
+	private int nr;
+	private String name;
+	private int time;
+	
+	public Ship(int nr, String name) {
+		this.nr = nr;
+		this.name = name;
+	}
+	
+	public int getNr() {
+		return nr;
+	}
+	public void setNr(int nr) {
+		this.nr = nr;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getTime() {
+		return time;
+	}
+	
+	public void race() {
+		this.time = (int)(Math.random() * (600 - 300 + 1)) + 300;
+	}
+	
+}
+
+
+Competition.java
+
+package object;
+
+public class Competition {
+
+	private String name;
+	private Ship[] ships = new Ship[5];
+
+	public Competition(String name) {
+		this.name = name;
+	}
+
+	public String getName() {
+		return this.name;
+	}
+
+	public void addShip(Ship ship) {
+		for (int i = 0; i < ships.length; i++) {
+			if (ships[i] == null) {
+				ships[i] = ship;
+				break;
+			}
+		}
+	}
+
+	public void start() {
+		for (int i = 0; i < ships.length; i++) {
+			if (ships[i] != null) {
+				ships[i].race();
+			}
+		}
+	}
+	
+	public void printResult() {
+		for (int i = 0; i < ships.length; i++) {
+			if (ships[i] != null) {
+				System.out.println("Shiff Nr: " + i + " Name " + ships[i].getName() + " Zeit: " + ships[i].getTime());
+			}
+		}
+	}
+	
+}
+
+]
+
+W02_4 Regatta Erweiterung | 23.08.2023 [
+
+boatStart.java
+
+package bin;
+
+import object.Competition;
+import object.Person;
+import object.Ship;
+
+public class boatStart {
+
+	public static void main(String[] args) {
+		Competition c = new Competition("Rotsee Regatta");
+		Person p1 = new Person("Ronan", "Coughlan", "Binningen");
+		Person p2 = new Person("Noah", "Beetschen", "Dornach");
+		Person p3 = new Person("David", "Weber", "Hochwald");
+		Ship ship1 = new Ship(1, "Alinghi");
+		Ship ship2 = new Ship(2, "Red Baron");
+		Ship ship3 = new Ship(3, "Blue Lagoon");
+		ship1.setOwner(p1);
+		ship2.setOwner(p2);
+		ship3.setOwner(p3);
+		c.addShip(ship1); // add ships to competition
+		c.addShip(ship2);
+		c.addShip(ship3);
+		c.start(); // start competition
+		c.printResult(); // print ships with time
+	}
+
+}
+
+Ship.java
+
+package object;
+
+public class Ship {
+	
+	private int nr;
+	private String name;
+	private int time;
+	private Person owner;
+	
+	public Ship(int nr, String name) {
+		this.nr = nr;
+		this.name = name;
+	}
+	
+	public int getNr() {
+		return nr;
+	}
+	public void setNr(int nr) {
+		this.nr = nr;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getTime() {
+		return time;
+	}
+	
+	public void race() {
+		this.time = (int)(Math.random() * (600 - 300 + 1)) + 300;
+	}
+
+	public Person getOwner() {
+		return owner;
+	}
+
+	public void setOwner(Person owner) {
+		this.owner = owner;
+	}
+	
+}
+
+
+Competition.java
+package object;
+
+public class Competition {
+
+	private String name;
+	private Ship[] ships = new Ship[5];
+
+	public Competition(String name) {
+		this.name = name;
+	}
+
+	public String getName() {
+		return this.name;
+	}
+
+	public void addShip(Ship ship) {
+		for (int i = 0; i < ships.length; i++) {
+			if (ships[i] == null) {
+				ships[i] = ship;
+				break;
+			}
+		}
+	}
+
+	public void start() {
+		for (int i = 0; i < ships.length; i++) {
+			if (ships[i] != null) {
+				ships[i].race();
+			}
+		}
+	}
+	
+	public void printResult() {
+		for (int i = 0; i < ships.length; i++) {
+			if (ships[i] != null) {
+				System.out.println("Shiff Nr: " + i + " Owner " + ships[i].getOwner().getFirstname() + " " + ships[i].getOwner().getLastname() + " Name " + ships[i].getName() + " Zeit: " + ships[i].getTime());
+			}
+		}
+	}
+	
+}
+
+Person.java
+
+package object;
+
+public class Person {
+
+	private String firstname;
+	private String lastname;
+	private String residence;
+	
+	public Person(String firstname, String lastname, String residence) {
+		this.firstname = firstname;
+		this.lastname = lastname;
+		this.residence = residence;
+	}
+
+	public String getFirstname() {
+		return firstname;
+	}
+
+	public void setFirstname(String firstname) {
+		this.firstname = firstname;
+	}
+
+	public String getLastname() {
+		return lastname;
+	}
+
+	public void setLastname(String lastname) {
+		this.lastname = lastname;
+	}
+
+	public String getResidence() {
+		return residence;
+	}
+
+	public void setResidence(String residence) {
+		this.residence = residence;
+	}
+	
+}
+
+]
+
+W3_03 Invoice | 30.08.2023 [
+
+Aufgabe 1
+
+Invoice.java
+
+package object;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Invoice {
+
+	private List<Item> items = new ArrayList<>();
+	private double totalPrice;
+
+	public void addItem(Item item) {
+		this.items.add(item);
+	}
+
+	public double calculateTotalPrice() {
+		for (Item i : items) {
+			this.totalPrice += i.getPrice();
+		}
+		return this.totalPrice;
+	}
+
+	public String printInvoice() {
+		String invoiceOverview = "Invoice items: \r\n";
+		for (Item i : items) {
+			invoiceOverview += String.format("%s: %s	%s CHF\r\n", i.getPosition(), i.getText(), i.getPrice());
+		}
+		invoiceOverview += String.format("\r\nTotal: %s CHF", calculateTotalPrice());
+		return invoiceOverview;
+	}
+
+}
+
+
+Item.java
+
+package object;
+
+public class Item {
+	
+	private String text;
+	private double price;
+	private int position;
+	
+	public Item(String text, double price, int position) {
+		this.text = text;
+		this.price = price;
+		this.position = position;
+	}
+	
+	public String getText() {
+		return this.text;
+	}
+	
+	public double getPrice() {
+		return this.price;
+	}
+	
+	public int getPosition() {
+		return this.position;
+	}
+	
+}
+
+
+InvoiceRunner.java
+
+package bin;
+
+import object.Invoice;
+import object.Item;
+
+public class InvoiceRunner {
+	
+	public static void main(String[] args) {
+		Invoice invoice = new Invoice();
+		invoice.addItem(new Item("Zalando | Hoodie", 349.99, 1));
+		invoice.addItem(new Item("Zalando | Schuhe", 299.99, 2));
+		invoice.addItem(new Item("StockX | Jordan 4", 637.50, 3));
+		System.out.println(invoice.printInvoice());
+	}
+
+}
+
+
+Aufgabe 2 (Erweiterung)
+
+Invoice.java
+
+package object;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Invoice {
+
+	private List<Item> items = new ArrayList<>();
+	private double totalPrice;
+	private double vat;
+
+	public double getVat() {
+		return vat;
+	}
+
+	public void setVat(double vat) {
+		this.vat = vat;
+	}
+
+	public void addItem(Item item) {
+		this.items.add(item);
+	}
+
+	public double calculateTotalPrice() {
+		for (Item i : items) {
+			this.totalPrice += i.getPrice();
+		}
+		return this.totalPrice;
+	}
+
+	public String printInvoice() {
+		String invoiceOverview = "Invoice items: \r\n";
+		for (Item i : items) {
+			invoiceOverview += String.format("%s: %s	%s CHF\r\n", i.getPosition(), i.getText(), i.getPrice());
+		}
+		invoiceOverview += String.format("\r\nTotal: %s CHF", calculateTotalPrice());
+		return invoiceOverview;
+	}
+
+	public String printInvoiceWithVAT() {
+		String invoiceOverview = "Invoice items: \r\n";
+		for (Item i : items) {
+			invoiceOverview += String.format("%s: %s	%s CHF\r\n", i.getPosition(), i.getText(), i.getPrice());
+		}
+		invoiceOverview += String.format("VAT: %s%%", this.vat);
+		invoiceOverview += String.format("\r\nTotal: %s CHF", calculateTotalPrice() - (calculateTotalPrice() / 100 * vat));
+		return invoiceOverview;
+	}
+
+}
+
+
+Item.java
+
+package object;
+
+public class Item {
+
+	private String text;
+	private double price;
+	private int position;
+
+	public Item(String text, double price, int position) {
+		this.text = text;
+		this.price = price;
+		this.position = position;
+	}
+
+	public String getText() {
+		return this.text;
+	}
+
+	public double getPrice() {
+		return this.price;
+	}
+
+	public int getPosition() {
+		return this.position;
+	}
+
+}
+
+
+InvoiceRunner.java
+
+package bin;
+
+import object.Invoice;
+import object.Item;
+
+public class InvoiceRunner {
+	
+	public static void main(String[] args) {
+		Invoice invoice = new Invoice();
+		invoice.setVat(7.7);
+		invoice.addItem(new Item("Zalando | Hoodie", 349.99, 1));
+		invoice.addItem(new Item("Zalando | Schuhe", 299.99, 2));
+		invoice.addItem(new Item("StockX | Jordan 4", 637.50, 3));
+		System.out.println(invoice.printInvoiceWithVAT());
+	}
+
+}
+
+]
