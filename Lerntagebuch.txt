@@ -1,0 +1,135 @@
+16.08.2022, 12:45 - 16.15
+
+	• Was habe ich gemacht?
+		○ Ich habe die Repititions - und Schriftliche Aufgaben erledigt und zu meinen Resourcen hinzugefügt.
+		○ Bei der erweiterungsaufgabe war ich in wenigen Minuten fertig und habe dies auch zu den Resourcen hinzugefügt.
+	• Was habe ich gelernt?
+		○ Ich habe diese Woche nichts neues gelernt.
+	• Was ist mir gut gelungen?
+		○ Code Aufgaben zu lösen.
+		○ Meine Lösungen zu dokumentieren.
+	• Wie bin ich vorgegangen, dass es mir gelungen ist?
+		○ Ich habe zugehört und hatte schon Objekt kenntnisse.
+	• Womit hatte ich Schwierigkeiten?
+		○ Ich hatte am Anfang schwierigkeiten zu verstehen wie ich mein Modulnotebook strukturieren und führen soll.
+	• Wie habe ich auf die Schwierigkeiten reagiert?
+		○ Ich habe Herr Zaug nachgefragt, und er hat mir Tipps gegeben.
+
+23.08.2022, 12:45 - 16.15
+
+	• Was habe ich gemacht?
+		○ Ich habe die Repititions - und Schriftliche Aufgaben erledigt und zu meinen Resourcen hinzugefügt.
+		○ Bei der Erweiterungsaufgabe war ich in wenigen Minuten fertig und habe dies auch zu den Resourcen hinzugefügt.
+	• Was habe ich gelernt?
+		○ Obwohl nichts neues gelernt habe, ist es für mich gut gewesen, Repititionsaufgaben zu lösen.
+	• Was ist mir gut gelungen?
+		○ Ich konnte alle Aufgaben schnell und präzise lösen.
+		○ Ich konnte die Ressourcen schnell und sinnvoll einfügen.
+	• Wie bin ich vorgegangen, dass es mir gelungen ist?
+		○ Ich habe meine Aufgaben konzentriert gelöst, und habe mich nicht ablenken lassen.
+	• Womit hatte ich Schwierigkeiten?
+		○ Ich hatte diese Woche gar keine schwierigkeiten. Es lief alles reibungslos.
+	• Wie habe ich auf die Schwierigkeiten reagiert?
+		○ -
+
+30.08.2022, 12:45 - 16.15
+
+	• Was habe ich gemacht?
+		○ Ich habe die Arraylist Aufgabe gelöst und zu meinen Resourcen hinzugefügt.
+		○ Ich habe die Invoice Aufgabe gelöst und zu meinen Resourcen hinzugefügt.
+			§ Zuerst habe ich das UML modelliert.
+			§ Ich habe dann das UML in Code umgesetzt.
+			§ Ich habe danach die Erweiterungsaufgabe gelöst.
+		○ Ich habe das Code von der Game aufgabe gelöst.
+	• Was habe ich gelernt?
+		○ Ich habe gelernt wie ich ein UML erstellt.
+	• Was ist mir gut gelungen?
+		○ Alle Aufgaben sind mir gut gelungen und wurden rasch gelöst.
+	• Wie bin ich vorgegangen, dass es mir gelungen ist?
+		○ Ich habe konzentriert gearbeitet.
+	• Womit hatte ich Schwierigkeiten?
+		○ Ich hatte schwierigkeiten bei der Verwendung vom Visual Paradigm software.
+	• Wie habe ich auf die Schwierigkeiten reagiert?
+		○ Ich habe Herr Zaug gefragt wie ich mit sie umgehe.
+
+06.09.2022, 12:45 - 16.15
+
+	• Was habe ich gemacht?
+		○ Ich habe die Javadoc Aufgabe gelöst und zu meinen Resourcen hinzugefügt.
+		○ Ich habe an meinen Schaufenster gearbeitet.
+		○ Ich habe meine Lernjournale nachgeholt.
+		○ Ich habe an meinen heutigen Lernjournal gearbeitet.
+	• Was habe ich gelernt?
+		○ Ich habe gelernt wie man Javadocs schreibt.
+		○ Ich habe gelernt was der Schaufenster ist.
+		○ Ich habe gelernt wie ich Schlüsselwörter benutze wie z.B @author, @version, @param und @return
+	• Was ist mir gut gelungen?
+		○ Die Javadocs zu schreiben.
+		○ Meine Lernjournale nachzuholen.
+	• Wie bin ich vorgegangen, dass es mir gelungen ist?
+		○ Ich habe konzentriert gearbeitet.
+		○ Ich habe viele Fragen gefragt.
+	• Womit hatte ich Schwierigkeiten?
+		○ Ich hatte Schwierigkeiten mich im Schaufenster richtig auszudrücken.
+	• Wie habe ich auf die Schwierigkeiten reagiert?
+		○ Ich habe Herr Zaug um Hilfe gebeten.
+
+13.09.2022, 12:45 - 16.15
+
+	• Was habe ich gemacht?
+		○ Ich habe mit Valerio Attribute überlegt für ein Elektro Auto.
+		○ Ich habe ein Video geschaut über Vererbung.
+		○ Ich habe mit Noah zusammen die Vererbung Aufgabe gelöst.
+		○ Ich habe Mein Lernjournal geschrieben.
+		○ Ich habe meine Aufgaben zu meinen Resourcen hinzugefügt.
+	• Was habe ich gelernt?
+		○ Ich habe gelernt was für eine funktion "super" hat.
+		○ Ich habe gelernt was Polymorphie ist.
+	• Was ist mir gut gelungen?
+		○ Die Vererbung Aufgaben zu lösen.
+	• Wie bin ich vorgegangen, dass es mir gelungen ist?
+		○ Mit Noah gut zusammengearbeitet.
+		○ Mich konzentriert.
+	• Womit hatte ich Schwierigkeiten?
+		○ Ich war am Anfang ein bisschen verwirrt, was der "super" bewirkt.
+	• Wie habe ich auf die Schwierigkeiten reagiert?
+		○ Ich habe im Internet recherchiert, und Herr Zaug um Hilfe gebeten.
+
+20.09.2022, 12:45 - 16.15
+
+	• Was habe ich gemacht?
+		○ Ich habe die Polymorphie Aufgaben erledigt und habe sie zu meinen Resourcen hinzugefügt.
+		○ Ich habe die Abstrakte Aufgaben gelöst und habe sie zu meine Resourcen hinzugefügt.
+	• Was habe ich gelernt?
+		○ Ich habe gelernt 
+	• Was ist mir gut gelungen?
+		○ Die Vererbung Aufgaben zu lösen.
+	• Wie bin ich vorgegangen, dass es mir gelungen ist?
+		○ Mit Noah gut zusammengearbeitet.
+		○ Mich konzentriert.
+	• Womit hatte ich Schwierigkeiten?
+		○ Ich war am Anfang ein bisschen verwirrt, was der "super" bewirkt.
+	• Wie habe ich auf die Schwierigkeiten reagiert?
+		○ Ich habe im Internet recherchiert, und Herr Zaug um Hilfe gebeten.
+
+20.09.2022, 12:45 - 16.15
+
+	• Was habe ich gemacht?
+		○ Ich habe bei der Einleitung zugehört.
+		○ Ich habe die Aufgaben mit die abstrakte Klassen erledigt und zu meinen Resourcen hinzugefügt.
+		○ Ich habe mich mit Interfaces auseinandergesetzt und habe die Fragen dazu beantwortet.
+		○ Ich habe die Game Aufgabe gelöst und zu meiner Resourcen hinzugefügt.
+	• Was habe ich gelernt?
+		○ Ich habe gelernt was ein Interface ist.
+		○ Ich habe gelernt in welchen Situationen man ein Interface wählen soll.
+		○ Ich habe gelernt in welchen Situationen man eine Abstrakte Klasse wählen soll.
+	• Was ist mir gut gelungen?
+		○ Die Interface Fragen zu beantworten.
+		○ Interfaces zu implementieren.
+	• Wie bin ich vorgegangen, dass es mir gelungen ist?
+		○ Ich habe mich konzentriert.
+		○ Ich habe Herr Zaug viele Fragen gestellt.
+	• Womit hatte ich Schwierigkeiten?
+		○ Ich hatte schwierigkeiten zu verstehen, warum man in gewisse Situationen Absrtakt oder nterface wählt, anhand von den Beispielen.
+	• Wie habe ich auf die Schwierigkeiten reagiert?
+		○ Ich habe etwa 15 Minuten alleine mit Herr Zaug diskutiert, bis ich es verstanden habe.
